@@ -7,6 +7,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     jshint: {
       src: ['app/**/*.js', 'Gruntfile.js'],
+      options: {
+        ignores: ['app/bower_components/**/*.js']
+      },
       test: ["test/**/*.js"]
     },
     karma: {
@@ -15,6 +18,7 @@ module.exports = function(grunt) {
         singleRun: true
       }
     },
+
     connect: {
        server: {
          options: {
