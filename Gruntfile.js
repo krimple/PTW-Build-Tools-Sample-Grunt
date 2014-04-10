@@ -33,4 +33,9 @@ module.exports = function(grunt) {
      'connect:server'
   ]);
 
+  grunt.registerTask('test', [
+    'jshint',
+    'karma'
+  ]);
+
 };
