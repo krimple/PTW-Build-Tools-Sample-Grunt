@@ -9,6 +9,12 @@ module.exports = function(grunt) {
       src: ['app/**/*.js', 'Gruntfile.js'],
       test: ["test/**/*.js"]
     },
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js',
+        singleRun: true
+      }
+    },
     connect: {
        server: {
          options: {
