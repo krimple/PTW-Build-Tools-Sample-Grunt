@@ -1,1 +1,3 @@
-var myGlobal = 'hi there sonny';
+angular.module('myApp', [])
+  .constant('PI', 3.14159);
+
